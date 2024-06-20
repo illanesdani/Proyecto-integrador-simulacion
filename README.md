@@ -1,4 +1,6 @@
-** Proyecto Integrador Simulación **
+Proyecto Integrador Simulación
+
+
 ***Participantes ***
 * Falabella, Sol
 * Illanes, Daniela
