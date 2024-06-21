@@ -1,5 +1,6 @@
-import random
 import math
+import numpy as np
+import pandas as pd
 
 def MetodoConguencialLineal(x, a, b, mod):
 
@@ -101,6 +102,8 @@ def main():
 
     metodoKS(sucesionGenerada, periodo_n, ks)
 
+    df= pd.DataFrame(sucesionGenerada, columns=['RandomNumbers'])
+    df.to_csv('random_numbers.csv', index=False)
 
 if __name__ == "__main__":
     main()
