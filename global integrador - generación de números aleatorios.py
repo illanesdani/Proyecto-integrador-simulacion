@@ -4,6 +4,7 @@ import math
 def MetodoConguencialLineal(x, a, b, mod):
 
     sucesion = []
+    numerosAleatorios = []
     periodo = 0
     bandera = 0
 
@@ -13,15 +14,10 @@ def MetodoConguencialLineal(x, a, b, mod):
         x = ((a * x) + b) % mod
         periodo = periodo + 1
         if (bandera == x): break
-        print(x)
+        numerosAleatorios.append(x)
         sucesion.append(x/mod)
 
-    if(periodo == mod):
-        print("El generador es de ciclo completo")
-    else:
-        print("El generador es de ciclo incompleto")
-
-    return sucesion, periodo
+    return sucesion, periodo, numerosAleatorios
 
 def metodoKS(sucesion, n, ks):
     sucesion.sort()
@@ -83,7 +79,19 @@ def main():
     a = int(input("Ingrese el valor del multiplicador: "))
     b = int(input("Ingrese el valor de la constante aditiva: "))
 
-    sucesionGenerada, periodo_n = MetodoConguencialLineal(x,a,b,m)
+    sucesionGenerada, periodo_n, numerosAleatorios = MetodoConguencialLineal(x,a,b,m)
+
+    print("********************************************************************************************+")
+    print("Los numeros de X obtenidos fueron: ", numerosAleatorios)
+    print("Los numeros aleatorios obtenidos desde el valor de X y el modulo son: ", sucesionGenerada)
+    print("El periodo fue: ", periodo_n)
+
+    if(periodo_n == m):
+        print("El generador es de ciclo completo")
+    else:
+        print("El generador es de ciclo incompleto")
+
+    print("********************************************************************************************+")
 
     print("Comprobar que la sucesión generada sea válida: \n")
 
