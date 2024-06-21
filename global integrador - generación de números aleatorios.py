@@ -81,9 +81,11 @@ def main():
 
     sucesionGenerada, periodo_n, numerosAleatorios = MetodoConguencialLineal(x,a,b,m)
 
-    print("********************************************************************************************+")
+    print("************************************************************************************************************************")
     print("Los numeros de X obtenidos fueron: ", numerosAleatorios)
+    print(" ")
     print("Los numeros aleatorios obtenidos desde el valor de X y el modulo son: ", sucesionGenerada)
+    print(" ")
     print("El periodo fue: ", periodo_n)
 
     if(periodo_n == m):
@@ -91,7 +93,7 @@ def main():
     else:
         print("El generador es de ciclo incompleto")
 
-    print("********************************************************************************************+")
+    print("************************************************************************************************************************")
 
     print("Comprobar que la sucesión generada sea válida: \n")
 
