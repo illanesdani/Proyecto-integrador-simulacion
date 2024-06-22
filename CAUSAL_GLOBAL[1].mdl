@@ -1,0 +1,243 @@
+{UTF-8}
+CONTENIDO TOTAL  = A FUNCTION OF( Contenido Eliminado,Contenido Monetizable,Contenido no monetizable\
+		) ~~|
+CONTENIDO TOTAL=
+	~	
+	~		|
+
+Gastos  = A FUNCTION OF( Costo Fijo,Costo Variable)
+	~	
+	~		|
+
+INGRESO TOTAL  = A FUNCTION OF( Gastos,Ingreso por publicidad,Ingresos extra) ~~|
+INGRESO TOTAL=
+	~	
+	~		|
+
+USUARIOS ACTIVOS  = A FUNCTION OF( Nuevos Usuarios,Usuarios inactivos,Usuarios convertidos\
+		) ~~|
+USUARIOS ACTIVOS=
+	~	
+	~		|
+
+Contenido Monetizable=A FUNCTION OF(Contenido Monetizable,EMPRESA,Tasa de publicacion paga\
+		) ~~|
+Contenido Monetizable=
+	~	
+	~		|
+
+Contenido no monetizable  = A FUNCTION OF( Tasa de publicacion no paga,USUARIOS ACTIVOS\
+		)
+	~	
+	~		|
+
+Valor por publicidad  = A FUNCTION OF( Time) ~~|
+Valor por publicidad=
+	~	
+	~		|
+
+Visualizacion normal  = A FUNCTION OF( Tasa visualizacion,USUARIOS ACTIVOS)
+	~	
+	~		|
+
+Tasa visualizacion  = A FUNCTION OF( )
+	~	
+	~		|
+
+Contenido Eliminado  = A FUNCTION OF( CONTENIDO TOTAL,Tasa de eliminacion de publicidad\
+		)
+	~	
+	~		|
+
+Costo Fijo  = A FUNCTION OF( )
+	~	
+	~		|
+
+Costo Variable  = A FUNCTION OF( )
+	~	
+	~		|
+
+EMPRESA  = A FUNCTION OF( Usuarios convertidos) ~~|
+EMPRESA=
+	~	
+	~		|
+
+Ingreso por publicidad  = A FUNCTION OF( Contenido Monetizable,Valor por publicidad) ~~|
+Ingreso por publicidad=
+	~	
+	~		|
+
+Ingresos extra  = A FUNCTION OF( )
+	~	
+	~		|
+
+Nuevos Usuarios  = A FUNCTION OF( Tasa de nuevos usuarios,USUARIOS ACTIVOS)
+	~	
+	~		|
+
+Tasa de conversión  = A FUNCTION OF( )
+	~	
+	~		|
+
+Tasa de eliminacion de publicidad  = A FUNCTION OF( )
+	~	
+	~		|
+
+Tasa de inactividad  = A FUNCTION OF( )
+	~	
+	~		|
+
+Tasa de nuevos usuarios  = A FUNCTION OF( )
+	~	
+	~		|
+
+Tasa de publicacion no paga  = A FUNCTION OF( )
+	~	
+	~		|
+
+Tasa de publicacion paga=A FUNCTION OF(Tasa de publicacion paga) ~~|
+Tasa de publicacion paga=
+	~	
+	~		|
+
+Usuarios inactivos  = A FUNCTION OF( Tasa de inactividad,USUARIOS ACTIVOS)
+	~	
+	~		|
+
+Usuarios convertidos  = A FUNCTION OF( Tasa de conversión,USUARIOS ACTIVOS)
+	~	
+	~		|
+
+Visualizacion por publicidad  = A FUNCTION OF( USUARIOS ACTIVOS,Valor por publicidad)\
+		 ~~|
+Visualizacion por publicidad=
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,74,0
+10,1,Visualizacion por publicidad,788,404,80,21,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Valor por publicidad,572,433,67,32,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,Nuevos Usuarios,1281,620,72,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,Tasa de nuevos usuarios,1499,619,58,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,USUARIOS ACTIVOS,1109,474,56,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,6,Usuarios convertidos,1471,519,72,21,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,Contenido no monetizable,1336,274,78,20,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,8,Tasa de publicacion paga,1196,62,85,21,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,9,CONTENIDO TOTAL,1101,341,60,21,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,10,Contenido Monetizable,939,108,70,19,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,11,Ingreso por publicidad,436,334,56,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,12,Tasa de inactividad,747,568,87,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,13,Usuarios inactivos,875,511,63,21,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,Tasa de conversión,1683,550,65,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,15,INGRESO TOTAL,381,486,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,16,Gastos,236,518,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,17,Costo Variable,262,636,50,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,18,Costo Fijo,220,395,47,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,19,Contenido Eliminado,855,242,59,24,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,20,Tasa de eliminacion de publicidad,662,282,81,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,21,EMPRESA,1583,264,42,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,22,Tasa de publicacion no paga,1467,396,67,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,23,4,3,1,0,43,0,0,192,0,-1--1--1,,1|(1403,625)|
+1,24,12,13,1,0,43,0,0,192,0,-1--1--1,,1|(792,527)|
+1,25,5,13,1,0,43,0,0,192,0,-1--1--1,,1|(990,472)|
+1,26,5,6,1,0,43,0,0,192,0,-1--1--1,,1|(1288,459)|
+1,27,3,5,1,0,43,0,0,192,0,-1--1--1,,1|(1226,613)|
+1,28,5,3,1,0,43,0,0,192,0,-1--1--1,,1|(1215,554)|
+1,29,14,6,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,30,6,21,1,0,43,0,0,192,0,-1--1--1,,1|(1562,401)|
+1,31,10,9,1,0,43,0,0,192,0,-1--1--1,,1|(1043,201)|
+1,32,9,19,1,0,43,0,0,192,0,-1--1--1,,1|(946,337)|
+1,33,22,7,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,34,8,10,1,0,43,0,0,192,0,-1--1--1,,1|(1067,67)|
+1,35,21,10,1,0,43,0,0,192,0,-1--1--1,,1|(1276,152)|
+1,36,20,19,1,0,43,0,0,192,0,-1--1--1,,1|(752,244)|
+1,37,2,11,1,0,43,0,0,192,0,-1--1--1,,1|(494,408)|
+1,38,10,11,1,0,43,0,0,192,0,-1--1--1,,1|(539,231)|
+1,39,11,15,1,0,43,0,0,192,0,-1--1--1,,1|(389,392)|
+1,40,17,16,1,0,43,0,0,192,0,-1--1--1,,1|(231,590)|
+1,41,18,16,1,0,43,0,0,192,0,-1--1--1,,1|(210,450)|
+10,42,Ingresos extra,471,626,49,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,43,42,15,1,0,43,0,0,192,0,-1--1--1,,1|(416,571)|
+1,44,2,1,0,0,43,0,0,192,0,-1--1--1,,1|(0,0)|
+1,45,5,1,1,0,43,0,0,192,0,-1--1--1,,1|(960,421)|
+10,46,Visualizacion normal,1062,644,76,22,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,47,5,46,1,0,43,0,0,192,0,-1--1--1,,1|(1068,550)|
+10,48,Time,553,547,43,11,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|||128-128-128,0,0,0,0,0,0
+1,49,48,2,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+10,50,Tasa visualizacion,1263,697,76,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,51,50,46,1,0,43,0,0,192,0,-1--1--1,,1|(1162,691)|
+1,52,5,7,1,0,43,0,0,192,0,-1--1--1,,1|(1267,397)|
+12,53,0,1187,556,22,22,8,7,0,8,-1,0,0,0,0-0-0,0-0-0,|48||0-0-0,0,0,0,0,0,0
++
+1,54,13,5,1,0,45,0,0,192,0,-1--1--1,,1|(994,525)|
+1,55,6,5,1,0,45,0,0,192,0,-1--1--1,,1|(1302,512)|
+1,56,16,15,1,0,45,0,0,192,0,-1--1--1,,1|(308,510)|
+1,57,19,9,1,0,45,0,0,192,0,-1--1--1,,1|(984,258)|
+1,58,7,9,1,0,43,0,0,192,0,-1--1--1,,1|(1212,286)|
+12,59,0,988,488,22,22,8,7,0,8,-1,0,0,0,0-0-0,0-0-0,|48||0-0-0,0,0,0,0,0,0
++
+12,60,0,970,287,22,22,8,7,0,8,-1,0,0,0,0-0-0,0-0-0,|48||0-0-0,0,0,0,0,0,0
+-
+12,61,0,1281,479,22,22,8,7,0,8,-1,0,0,0,0-0-0,0-0-0,|48||0-0-0,0,0,0,0,0,0
+-
+///---\\\
+:L<%^E!@
+5:Contenido no monetizable
+19:74,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Courier|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
